@@ -1,0 +1,52 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    --text-color : #444444 ;
+    --input-total-color : #DEFAFF;
+    --calender-color : #777777 ;
+}
+
+.Minner-timeSheet-footer{
+    width: 92% !important;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+.Minner-timeSheet-footer{
+    height: 59px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+.MtotalHours-info{
+    width: 44.5%;
+    font-size: medium;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+.Mword-Total{
+    font-weight: 600;
+    font-size: medium;
+    width: 10%;
+    letter-spacing: 0.05rem;
+}
+.MtotalHours-wrapper{
+    width:45.5% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.MtotalHours{
+    height: 30px;
+    width: 60px;
+    background-color: var(--input-total-color) ;
+    border: 1px solid var(--acellbi-theme);
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 500;
+}

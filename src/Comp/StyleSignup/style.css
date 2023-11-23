@@ -1,0 +1,163 @@
+body{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    height: 100svh;
+    width: 100vw;
+}
+#background{
+    height: 100svh;
+    width: 100vw;
+    position: absolute;
+}
+#upper-box{
+    height: 33.3333%;
+    width: 100%;
+    background-color: var(--bc-lightgreenishblue);
+}
+#lower-box{
+    height: 66.6666%;
+    width: 100%;
+    background-color: var(--bc-white);
+}
+#signup{
+    position: relative;
+    height: 100svh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    >#signupform{
+        >#proceedsignup{
+            position: absolute;
+            background-color: var(--bc-white);
+            border: none;
+            font-weight: 600;
+            border-radius: 5px;
+            color: var(--acellbi-theme);
+            padding: 7px;
+            bottom: 20px;
+            font-size: medium;
+        }
+        position: relative;
+        height: 80vh;
+        width: 500px;
+        border: 2px solid var(--acellbi-theme);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        >#uppersignup{
+            background-color: var(--bc-white);
+            border-radius: 30px 30px 0px 0px;
+            height: 120px ;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        >#lowersignup{
+            padding-bottom: 40px;
+            border-radius: 0 0 30px 30px;
+            background-color: var(--acellbi-theme);
+            height: calc(100% - 120px) ;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            >.input-container{
+                margin-bottom: 2px;
+                color: var(--bc-white);
+                font-size: 1.3rem;
+                height: 50px;
+                width: 80%;
+                >label{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                >input{
+                    padding: 2px;
+                    height: 100%;
+                    width: 50%;
+                    border: none;
+                    outline: none;
+                    font-size: large;
+                    padding-left: 10px;
+                    border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+#logo-and-nav{
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+    width: 90vw;
+    margin: 0 auto;
+    >#logo-conatiner{
+        width: 750px;
+        >img{
+            height: 50px;
+        }
+    }
+}
+.cover{
+    display: none;
+}
+@media screen and (max-width: 1400px) {
+    
+    .addProject,.addTask{
+        font-size: x-small;
+    }
+    #footer-controls{
+        width: 26%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .cover{
+        position: fixed;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        color: var(--bc-white);
+        background-color: var(--acellbi-theme);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+}
+@media screen and (max-height: 500px) {
+    .cover{
+        position: fixed;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        color: var(--bc-white);
+        background-color: var(--acellbi-theme);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+        
+    }
+}
+@media screen and (max-height: 650px) {
+    .input-container {
+        height: 40px !important;
+    }
+}
+@media screen and (max-height: 550px) {
+    .input-container {
+        height: 35px !important;
+    }
+}

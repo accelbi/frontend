@@ -1,0 +1,134 @@
+body{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    height: 100svh;
+    width: 100vw;
+}
+#background{
+    height: 100svh;
+    width: 100vw;
+    position: absolute;
+}
+#upper-box{
+    height: 33.3333%;
+    width: 100%;
+    background-color: var(--bc-lightgreenishblue);
+}
+#lower-box{
+    height: 66.6666%;
+    width: 100%;
+    background-color: var(--bc-white);
+}
+#timeCard{
+    position: relative;
+    height: 100svh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+#logo-and-nav{
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+    width: 90vw;
+    margin: 0 auto;
+    >#logo-conatiner{
+        width: 750px;
+        >img{
+            height: 50px;
+        }
+    }
+}
+.cover{
+    display: none;
+}
+#overlay-cover {
+    position: fixed;
+    z-index: 0;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0); /* Adjust the opacity as needed */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+}
+#menu{
+    z-index: 2;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .addProject,.addTask{
+        font-size: x-small;
+    }
+    #footer-controls{
+        width: 26%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .cover{
+        position: fixed;
+        z-index: 3;
+        height: 100%;
+        width: 100%;
+        color: var(--bc-white);
+        background-color: var(--acellbi-theme);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+}
+@media screen and (max-height: 500px) {
+    .cover{
+        position: fixed;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        color: var(--bc-white);
+        background-color: var(--acellbi-theme);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+        
+    }
+}
+.toggleBetweenManAndEmp{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    color:var(--submit-button);
+    z-index: 2;
+    padding : 9px;
+    background-color: #defaff; 
+    border: 2px solid var(--acellbi-theme);
+    border-top-right-radius: 10px ;
+    height: 38px;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

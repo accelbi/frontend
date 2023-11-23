@@ -1,0 +1,97 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    --text-color : #444444 ;
+}
+
+.MnewRow{
+    width: 100%;
+    height: 59px;
+    border-bottom: 1px solid var(--acellbi-theme);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+.MinnerNewRow{
+    height: 59px;
+    width: 93.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Mname{
+    width: 18%;
+    text-align: left;
+}
+
+#Mid{
+    width: 13%;
+    text-align: left;
+}
+
+#Mtype{
+    width: 10%;
+}
+
+#Mstatus{
+    width: 10%;
+}
+
+#Msd{
+    width: 8%;
+}
+#Minner-details{
+    width: 34% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    >span{
+        width: 25%;
+    }
+    
+}
+.Mb-text{
+    text-align: center;
+    color:var(--text-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+.Ms-text{
+    font-weight: 700;
+    text-align: center;
+    color:var(--text-color);
+}
+.Mstatus-btn{
+    font-size:1rem;
+    font-weight: 700;
+    width: 90px;
+    height:35px ;
+    border-radius: 5px;
+    &.Mapp{
+        background-color: var(--light-acellbi-theme);
+        border:2px solid var(--acellbi-theme) !important;
+        color: var(--acellbi-theme);
+    }
+    &.Mrev{
+        background-color: var(--acellbi-theme);
+        border:2px solid var(--acellbi-theme) !important;
+        color: var(--bc-white);
+    }
+    &.Mrej{
+        background-color: rgb(254, 247, 247);
+        border:2px solid rgb(189, 1, 1) !important;
+        color: rgb(189, 1, 1);
+    }
+}
+.Mc{
+    color: var(--submit-button);
+}
+.Mss-text{
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}

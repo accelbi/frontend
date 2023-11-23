@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: 1px solid #ffffff00 !important;
+}
+button:active{
+    border: 1px solid black !important;
+}

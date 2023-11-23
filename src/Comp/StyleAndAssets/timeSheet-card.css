@@ -1,0 +1,143 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    --text-color : #444444 ;
+    --calender-color : #777777 ;
+}
+#timeSheet-card{
+    width: 94.7vw;
+    border: 2px solid var(--acellbi-theme);
+    height: calc(100% - 170px);
+    align-self: center;
+    border-radius: 33px;
+    background-color: var(--acellbi-theme);
+    display: flex;
+    flex-direction: column;
+}
+#timeSheet-title{
+    width: 94.5vw;
+    height: 60px;
+    background-color: var(--acellbi-theme);
+    align-self: center;
+    border-radius: 33px 33px 0 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    >span{
+        margin-left: 30px;
+        font-size: 30px;
+        letter-spacing: 0.3rem;
+        font-weight: 700;
+        color: var(--bc-white) ;
+    }
+}
+#calender{
+    width: 300px;
+    height: 35px;
+    color: var(--calender-color);
+    background-color: var(--bc-white);
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    >#current-week {
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+}
+.fa-calendar-days{
+    font-size: 25px;
+}
+#timeSheet-main{
+    width: 94.4vw;
+    height: calc(100% - 120px);
+    background-color: var(--light-acellbi-theme);
+    align-self: center;
+    align-items: center;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    >#timeSheet-main-heading{
+        width: 1448px;
+        height:60px;
+    }
+    >#timeSheet-update{
+        width: 94.4vw;
+        height: calc(100% - 120px);
+        align-self: center;
+        background-color: #fff;
+        overflow-y: scroll;
+    }
+    >#timeSheet-main-footer{
+        width: 100%;
+        height:60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+#timeSheet-footer{
+    width: 94.5vw;
+    height: 60px;
+    background-color: var(--acellbi-theme);
+    align-self: center;
+    border-radius: 0 0 33px 33px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#word-Project ,#word-Task{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+#word-Project{
+    width: 15%;
+}
+#word-Task{
+    width: 40%;
+}
+.word-Day{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >.word-Date{
+        font-size: small;
+        color: var(--acellbi-theme);
+    }
+}
+.word-Day:last-child{
+    color: rgb(160, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >.word-Date{
+        font-size: small;
+        color: rgb(254, 119, 119);
+    }
+}
+#timeSheet-main-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90% !important;
+    justify-self: center !important;
+    align-self: center !important;
+}
+#allDate{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

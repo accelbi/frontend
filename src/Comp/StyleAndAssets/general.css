@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.dja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* when using microsoft edge while developing a web page , we see if we have a input of type password then automalically there comes a eye options which can be used to toggle between type passwprd to text , I dont want this , how to get rid of this */
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}

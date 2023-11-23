@@ -1,0 +1,183 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    --text-color : #444444 ;
+    --input-total-color : #DEFAFF;
+    --calender-color : #777777 ;
+}
+
+#reason-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--acellbi-theme);
+    border-radius: 22px 22px 22px 22px;
+    z-index: 2;
+}
+#reason{
+    padding-top: 20px;
+    height: 200px;
+    width: 300px;
+    background-color: var(--bc-white);
+    border-radius:0 0 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--submit-button);
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 10px;
+}
+#leave-box{
+    width: 300px !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--acellbi-theme);
+    border-radius: 22px 22px 22px 22px;
+    z-index: 2;
+}
+#leave-form{
+    align-items: center;
+    width: 300px !important;
+    padding-top: 20px;
+    height: 300px;
+    width: 300px;
+    background-color: var(--bc-white);
+    border-radius:0 0 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--submit-button);
+    font-size: 1.3rem;
+    padding: 0 10px;
+}
+#leave-title{
+    height: 60px;
+    width: 300px;
+    background-color: var(--acellbi-theme);
+    border-radius: 20px 20px 0 0;
+    letter-spacing: 0.5rem;
+    font-size: 22px;
+    color: var(--bc-white);
+}
+#addProject-form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--acellbi-theme);
+    border-radius: 22px;
+    z-index: 2;
+    >form{
+        height: 170px;
+        width: 300px;
+        background-color: var(--bc-white);
+        border-radius:0 0 20px 20px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        >button{
+            width: 80px;
+            height: 30px;
+            background-color: var(--acellbi-theme);
+            border: var(--acellbi-theme);
+            border-radius: 5px;
+            color: var(--bc-white);
+            font-weight: 700;
+        }
+        >div{
+            width: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            >label{
+                font-size: large;
+                font-weight: 600;
+            }
+            >input{
+                height: 25px;
+                width: 170px;
+                background-color: var(--light-acellbi-theme);
+                border: 1.5px solid var(--acellbi-theme);
+            }
+        }
+    }
+}
+.title{
+    height: 60px;
+    width: 300px;
+    background-color: var(--acellbi-theme);
+    border-radius: 20px 20px 0 0;
+    letter-spacing: 0.5rem;
+    font-size: 22px;
+    color: var(--bc-white);
+}
+#addProject-close{
+    position: absolute ;
+    top: 10px;
+    right: 10px;
+}
+.addProject{
+    display: flex;
+    flex-direction: column;
+}
+.p-name{
+    font-weight: 600;
+    font-size: medium;
+    color: var(--text-color);
+}
+.p-code{
+    font-weight: 600;
+    font-size: small;
+    color: var(--acellbi-theme);
+}
+.addTask{
+    display: flex;
+    align-items: center;
+    >div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-right: 10px;
+    }
+    >div:nth-child(2){
+        width: 360px;
+        max-height: 46px;
+        overflow-y: scroll;
+    }
+
+}
+.t-name{
+    font-weight: 600;
+    font-size: medium;
+    color: var(--text-color);
+}
+.t-code{
+    font-weight: 600;
+    font-size: small;
+    color: var(--acellbi-theme);
+}
+.t-desc{
+    font-weight: 600;
+    font-size: small;
+    color: var(--text-color);
+}
+#submit{
+    padding: 10px;
+    font-size: 15px;
+    background-color: var(--acellbi-theme);
+    color: var(--bc-white);
+    border:2px solid var(--acellbi-theme);
+    border-radius: 5px;
+}
+#submit:active{
+    border:2px solid var(--bc-lightgreenishblue);
+}

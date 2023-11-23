@@ -1,0 +1,140 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    --text-color : #444444 ;
+    --calender-color : #777777 ;
+}
+#MtimeSheet-card{
+    width: 94.7vw;
+    border: 2px solid var(--acellbi-theme);
+    height: calc(100% - 170px);
+    align-self: center;
+    border-radius: 33px;
+    background-color: var(--acellbi-theme);
+    display: flex;
+    flex-direction: column;
+}
+#MtimeSheet-title{
+    width: 94.5vw;
+    height: 60px;
+    background-color: var(--acellbi-theme);
+    align-self: center;
+    border-radius: 33px 33px 0 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    >span{
+        margin-left: 30px;
+        font-size: 30px;
+        letter-spacing: 0.3rem;
+        font-weight: 700;
+        color: var(--bc-white) ;
+    }
+}
+#Mcalender{
+    width: 300px;
+    height: 35px;
+    color: var(--calender-color);
+    background-color: var(--bc-white);
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    >#Mcurrent-week {
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+}
+.Mfa-calendar-days{
+    font-size: 25px;
+}
+#MtimeSheet-main{
+    width: 94.4vw;
+    height: calc(100% - 90px);
+    background-color: var(--light-acellbi-theme);
+    align-self: center;
+    align-items: center;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    >#MtimeSheet-main-heading{
+        width: 1448px;
+        height:60px;
+    }
+    >#MtimeSheet-update{
+        width: 94.4vw;
+        height: calc(100% - 60px);
+        align-self: center;
+        background-color: #fff;
+        overflow-y: scroll;
+    }
+    
+}
+#MtimeSheet-footer{
+    width: 94.5vw;
+    height: 30px;
+    background-color: var(--acellbi-theme);
+    align-self: center;
+    border-radius: 0 0 33px 33px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#MtimeSheet-main-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93% !important;
+    justify-self: center !important;
+    align-self: center !important;
+    margin-right: 0.4%;
+}
+#Mword-name{
+    width: 18%;
+    text-align: left;
+}
+
+#Mword-id{
+    width: 13%;
+    text-align: left;
+}
+
+#Mword-type{
+    width: 10%;
+}
+
+#Mword-status{
+    width: 10%;
+}
+
+#Mword-sd{
+    width: 8%;
+}
+#Minner-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >span{
+        width: 25%;
+    }
+}
+.Mb-text{
+    text-align: center;
+    color:var(--text-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+.Ms-text{
+    font-weight: 700;
+    text-align: center;
+    color:var(--text-color);
+    font-size: 15px;
+}

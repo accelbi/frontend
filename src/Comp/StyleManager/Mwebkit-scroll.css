@@ -1,0 +1,21 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+/* ::-webkit-scrollbar-button
+::-webkit-scrollbar-corner*/
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    width: 4px;
+    background-color: var(--acellbi-theme);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--light-acellbi-theme);
+}
+/* ::-webkit-scrollbar-track-piece */

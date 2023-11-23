@@ -1,0 +1,66 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    --text-color : #444444 ;
+    --input-total-color : #DEFAFF;
+    --calender-color : #777777 ;
+}
+
+#addNewRow-btn{
+    width: 120px;
+    height: 35px;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: var(--bc-white);
+    border: var(--bc-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#plus-wrapper{
+    height: 25px;
+    width: 25px;
+    border: 2px solid var(--text-color);
+    border-radius: 25px;
+}
+#submit-btn{
+
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--submit-button);
+    border: var(--submit-button);
+    color: var(--bc-white);
+    font-size: 1rem;
+    font-weight: 600;
+}
+#info-of-appr-and-subm-date{
+    margin-right: 5%;
+    max-width: 25%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    color: var(--bc-white);
+    font-size: small;
+}
+#footer-controls{
+    width: 355px !important;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+#mang-appr-date{
+    >#mang-appr-date-input{
+        >#info{
+            color:red;
+            margin-left : 5px;
+            transform: translateY(3px);
+        }
+    }
+}

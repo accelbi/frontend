@@ -1,0 +1,41 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+}
+
+#user-full-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light-acellbi-theme);
+    border: 2px solid var(--acellbi-theme);
+    border-radius: 20px;
+    height: 80px;
+    min-width: 240px;
+    width: 250px;
+}
+#user-details{
+    height: 50px;
+    width: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-evenly;
+}
+#profile-pic{
+    height:55px ;
+    width:55px ;
+    border-radius: 50px;
+    border: 2px solid var(--acellbi-theme);
+}
+.fa-user{
+    font-size: 30px;
+    color: var(--acellbi-theme);
+}
+.user-name{
+    font-size: 22px;
+    font-weight: 700;
+}

@@ -1,0 +1,113 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    --text-color : #444444 ;
+    --input-total-color : #DEFAFF;
+    --calender-color : #777777 ;
+}
+
+#MaddProject-form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--acellbi-theme);
+    border-radius: 22px;
+    >form{
+        height: 170px;
+        width: 300px;
+        background-color: var(--bc-white);
+        border-radius:0 0 20px 20px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        >button{
+            width: 80px;
+            height: 30px;
+            background-color: var(--acellbi-theme);
+            border: var(--acellbi-theme);
+            border-radius: 5px;
+            color: var(--bc-white);
+            font-weight: 700;
+        }
+        >div{
+            width: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            >label{
+                font-size: large;
+                font-weight: 600;
+            }
+            >input{
+                height: 25px;
+                width: 170px;
+                background-color: var(--light-acellbi-theme);
+                border: 1.5px solid var(--acellbi-theme);
+            }
+        }
+    }
+}
+.Mtitle{
+    height: 60px;
+    width: 300px;
+    background-color: var(--acellbi-theme);
+    border-radius: 20px 20px 0 0;
+    letter-spacing: 0.5rem;
+    font-size: 22px;
+    color: var(--bc-white);
+}
+#MaddProject-close{
+    position: absolute ;
+    top: 5px;
+    right: 0px;
+}
+.MaddProject{
+    display: flex;
+    flex-direction: column;
+}
+.Mp-name{
+    font-weight: 600;
+    font-size: medium;
+    color: var(--text-color);
+}
+.Mp-code{
+    font-weight: 600;
+    font-size: small;
+    color: var(--acellbi-theme);
+}
+.MaddTask{
+    display: flex;
+    align-items: center;
+    >div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-right: 10px;
+    }
+    >div:nth-child(2){
+        width: 360px;
+        max-height: 46px;
+        overflow-y: scroll;
+    }
+
+}
+.Mt-name{
+    font-weight: 600;
+    font-size: medium;
+    color: var(--text-color);
+}
+.Mt-code{
+    font-weight: 600;
+    font-size: small;
+    color: var(--acellbi-theme);
+}
+.Mt-desc{
+    font-weight: 600;
+    font-size: small;
+    color: var(--text-color);
+}

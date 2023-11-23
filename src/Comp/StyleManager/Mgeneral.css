@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Mdja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:active{
+    border: 2px solid black !important;
+}
